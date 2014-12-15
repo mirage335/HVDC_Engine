@@ -1,0 +1,4 @@
+elements-dir ./gedasymbols/footprints
+elements-dir ./customParts/footprints
+schematics IdeologicalDiode-600V.sch
+output-name IdeologicalDiode-600V

@@ -1,0 +1,4 @@
+elements-dir ../../gedasymbols/footprints
+elements-dir ../../customParts/footprints
+schematics Vctrl-sys.sch
+output-name Vctrl-sys

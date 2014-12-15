@@ -1,0 +1,47 @@
+unnamed_net39	T2-5 T2-4 
+unnamed_net38	T2-1 D3-2 D2-2 
+unnamed_net37	T1-5 T1-4 
+unnamed_net36	T2-3 TX+-1 TVS1-2 T1-2 
+unnamed_net35	T2-6 TX--1 TVS1-1 T1-1 
+M1/unnamed_net34	M1/C11-1 M1/C12-1 
+M1/unnamed_net33	M1/R29-1 M1/R30-2 M1/Q1-1 
+M1/unnamed_net32	M1/C17-1 M1/Q2-2 M1/R31-2 M1/Q1-2 
+M1/unnamed_net31	M1/U2-11 M1/Q2-1 M1/Q2-3 M1/R28-2 
+M1/unnamed_net30	M1/U3-2 M1/U3-1 M1/R26-1 
+M1/unnamed_net29	M1/R28-1 M1/C16-2 M1/R27-2 M1/U3-7 
+M1/unnamed_net28	M1/R26-2 M1/C16-1 M1/R27-1 M1/U3-6 
+M1/unnamed_net27	M1/R3-2 M1/C4-2 M1/R4-1 
+M1/unnamed_net26	M1/C10-2 M1/R13-1 
+M1/unnamed_net25	M1/C9-1 M1/C10-1 M1/R12-2 
+M1/unnamed_net24	M1/U1-6 M1/R12-1 M1/R11-2 
+M1/unnamed_net23	M1/C8-2 M1/R10-1 
+M1/unnamed_net22	M1/U1-5 M1/R11-1 M1/R10-2 
+M1/unnamed_net21	M1/C7-1 M1/C8-1 M1/R9-2 
+M1/unnamed_net20	M1/U1-13 M1/U1-11 M1/U1-9 M1/R13-2 M1/R14-1 
+M1/unnamed_net19	M1/U1-12 M1/U1-8 M1/U1-10 M1/C11-2 M1/R14-2 
+M1/unnamed_net18	M1/U1-4 M1/R9-1 M1/R8-2 
+M1/unnamed_net17	M1/C6-2 M1/R7-1 
+M1/unnamed_net16	M1/U1-3 M1/R8-1 M1/R7-2 
+M1/unnamed_net15	M1/C6-1 M1/C5-1 M1/R6-2 
+M1/unnamed_net14	M1/R6-1 M1/R5-2 M1/U1-2 
+M1/unnamed_net13	M1/C4-1 M1/R5-1 M1/U1-1 
+M1/unnamed_net12	M1/R19-1 M1/C13-1 
+M1/unnamed_net11	M1/R25-2 M1/U2-14 
+M1/unnamed_net10	M1/R24-1 M1/R23-2 M1/U2-9 M1/U2-1 
+M1/unnamed_net9	M1/R23-1 M1/R22-1 M1/U2-7 
+M1/Vcc	M1/Q1-3 M1/U3-8 M1/R4-2 M1/C3-1 M1/U1-14 M1/L1-2 M1/C2-1 M1/R1-2 M1/R21-2 M1/R20-2 M1/R24-2 M1/U2-3 
+M1/unnamed_net8	M1/R17-2 M1/R19-2 M1/U2-5 M1/R16-1 
+M1/MOD	M1/MODULE-5 M1/C12-2 M1/R15-2 M1/R18-1 M1/R16-2 
+M1/Cfreq1	M1/MODULE-3 M1/C15-1 M1/U2-10 M1/R29-2 M1/R21-1 M1/R20-1 M1/R22-2 M1/U2-2 M1/C14-2 
+M1/Cfreq2	M1/MODULE-4 M1/R25-1 M1/C13-2 M1/U2-4 M1/R18-2 M1/C14-1 
+M1/GND	M1/C1-1 M1/R1-1 M1/R2-2 M1/R15-1 M1/U2-8 M1/U2-6 
+unnamed_net7	M1/MODULE-6 M1/U3-5 Z1-1 C2-1 R1-1 R2-1 R3-1 
+unnamed_net6	M1/MODULE-7 M1/U3-3 R7-1 R6-2 R5-2 R4-2 
+Vcc	D2-1 R6-1 R5-1 R4-1 D1-1 C1-1 R1-2 R2-2 R3-2 M1/MODULE-1 M1/L1-1 
+unnamed_net5	T1-6 s+-1 
+unnamed_net4	M1/MODULE-8 M1/U2-13 sTrig-1 
+Vee	T2-2 Z1-2 C4-2 R7-2 C2-2 C1-2 C3-2 R8-2 M1/MODULE-2 M1/C9-2 M1/C7-2 M1/R30-1 M1/C17-2 M1/R31-1 M1/U3-4 M1/R3-1 M1/C5-2 M1/C3-2 M1/U1-7 M1/C2-2 M1/C1-2 M1/C15-2 M1/U2-12 M1/R17-1 M1/R2-1 sGND-1 s--1 \
+ GND-1 
+unnamed_net3	D3-1 C4-1 C3-1 R8-1 CTRL-1 
+unnamed_net2	D1-2 START-1 
+unnamed_net1	T1-3 sHV-1 HV-1 

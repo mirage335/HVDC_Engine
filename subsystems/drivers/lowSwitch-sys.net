@@ -1,0 +1,6 @@
+unnamed_net4	Q2-1 Q1-1 Trig-1 
+Vcc	Q1-3 CTRL-1 
+unnamed_net3	sHV-1 
+Vee	Q2-3 GND-1 sGND-1 sw--1 s--1 
+unnamed_net2	sw+-1 s+-1 
+unnamed_net1	Q2-2 Q1-2 sTrig-1 

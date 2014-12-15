@@ -1,0 +1,38 @@
+Copyright (C) 2014 mirage335
+See the end of the file for license conditions.
+See license.txt for HVDC_Engine license conditions.
+
+__Usage__
+Various sources and loads can be adapted to HVDC grids of arbitrary voltage and scale, from 5V to upwards of 1kV. Specialized PWM controller minimizes noise while generating gate drive voltages.
+
+__Design__
+Top-Level schematics and PCB layouts are reference high-power converter designs. Deeply modular, functional subsystems carry out most basic functions (PWM, startup regulation, gate driving).
+
+USA companies provide all parts in these schematics, excepting the following alternative isolation transformers:
+$7.65 MOUSER 631-IT143
+$14.52 MOUSER 631-IT312
+$9.00 MOUSER 631-IT258
+
+__Future__
+A 3D printable air-core toroid transformer will be added after testing.
+
+__Safety__
+Great power, great responsibility... to be cautious. This circuitry is a starting point for DC power conversion systems, up to extremely high power, which must be backed up by appropriate protection against fault, fire, etc.
+
+Additionally, while everything is basically expected to work, nothing has been tested yet, certainly not at high power. In general, as engineering tools, these files are not intended to be used as-is.
+
+__Copyright__
+This file is part of HVDC_Engine.
+
+HVDC_Engine is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+HVDC_Engine is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with HVDC_Engine.  If not, see <http://www.gnu.org/licenses/>.

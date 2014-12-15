@@ -1,0 +1,6 @@
+unnamed_net4	T1-5 T1-4 
+unnamed_net3	D1-2 T1-1 
+Vcc	ISO+-1 D1-1 C1-1 R1-1 
+Vee	ISO--1 T1-2 C1-2 R1-2 
+unnamed_net2	T1-6 TX--1 
+unnamed_net1	T1-3 TX+-1 

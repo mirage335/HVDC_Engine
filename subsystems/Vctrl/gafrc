@@ -1,0 +1,11 @@
+(component-library "../../customParts")
+(component-library "../../gedasymbols")
+
+(component-library-search ".")
+(source-library ".")
+
+(component-library-search "../common")
+(source-library "../common")
+
+(component-library-search "../PWM")
+(source-library "../PWM")

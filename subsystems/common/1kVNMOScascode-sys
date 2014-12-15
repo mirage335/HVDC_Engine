@@ -1,0 +1,4 @@
+elements-dir ../../gedasymbols/footprints
+elements-dir ../../customParts/footprints
+schematics 1kVNMOScascode-sys.sch
+output-name 1kVNMOScascode-sys

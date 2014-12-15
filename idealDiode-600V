@@ -1,0 +1,4 @@
+elements-dir ./gedasymbols/footprints
+elements-dir ./customParts/footprints
+schematics idealDiode-600V.sch
+output-name idealDiode-600V
