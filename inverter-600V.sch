@@ -1,0 +1,660 @@
+v 20130925 2
+C 17100 58600 1 0 0 1kVpreReg-sys.sym
+{
+T 17600 59800 5 10 1 1 0 0 1
+refdes=PREG?
+T 17400 59600 5 10 1 1 0 0 1
+device=preRegulator
+}
+C 19400 58600 1 0 0 Vctrl-sys.sym
+{
+T 21100 60400 5 10 1 1 0 0 1
+refdes=VCTRL?
+T 21100 60100 5 10 1 1 0 0 1
+device=VctrlGen
+}
+N 19400 59000 18800 59000 4
+C 23900 58900 1 0 0 output-2.sym
+{
+T 24100 59600 5 10 0 0 0 0 1
+device=none
+T 24800 59100 5 10 1 0 0 0 1
+net=TX+:1
+T 24800 59000 5 10 1 1 0 1 1
+value=OUTPUT
+}
+C 23900 58600 1 0 0 output-2.sym
+{
+T 24100 59300 5 10 0 0 0 0 1
+device=none
+T 24800 58800 5 10 1 0 0 0 1
+net=TX-:1
+T 24800 58700 5 10 1 1 0 1 1
+value=OUTPUT
+}
+C 28100 63200 1 0 0 isoSwitch-sys.sym
+{
+T 29800 65000 5 10 1 1 0 0 1
+refdes=ISSW?
+T 29800 64700 5 10 1 1 0 0 1
+device=isoSwitch
+}
+C 21300 58100 1 0 0 1kVNMOScascode.sym
+{
+T 22500 59400 5 10 1 1 0 0 1
+refdes=QC?
+T 22500 59200 5 10 1 1 0 0 1
+device=1kVNMOScascode
+T 22500 58800 5 10 0 1 0 0 1
+value=1kVMax
+}
+N 21500 59100 21800 59100 4
+N 22300 58900 22300 58800 4
+C 25800 63000 1 0 0 isoPower-sys.sym
+{
+T 26600 63100 5 10 1 1 0 0 1
+device=isolator
+T 26800 63800 5 10 1 1 0 0 1
+refdes=T?
+}
+C 24400 63700 1 180 1 input-2.sym
+{
+T 25000 63000 5 10 0 0 180 6 1
+device=none
+T 24400 63500 5 10 1 0 180 6 1
+net=TX+:1
+T 24900 63600 5 10 1 1 180 1 1
+value=INPUT
+}
+C 24400 63400 1 180 1 input-2.sym
+{
+T 25000 62700 5 10 0 0 180 6 1
+device=none
+T 24400 63200 5 10 1 0 180 6 1
+net=TX-:1
+T 24900 63300 5 10 1 1 180 1 1
+value=INPUT
+}
+C 28100 59400 1 0 0 lowSwitch-sys.sym
+{
+T 29800 61200 5 10 1 1 0 0 1
+refdes=LOSW?
+T 29800 60900 5 10 1 1 0 0 1
+device=lowSwitch
+}
+C 30000 62700 1 0 0 1kVNMOScascode.sym
+{
+T 31200 63400 5 10 0 1 0 0 1
+value=1kVMax
+T 31200 64000 5 10 1 1 0 0 1
+refdes=QC?
+T 31200 63800 5 10 1 1 0 0 1
+device=1kVNMOScascode
+}
+N 30200 63700 30500 63700 4
+N 31000 63500 31000 63400 4
+C 30000 58900 1 0 0 1kVNMOScascode.sym
+{
+T 31200 59600 5 10 0 1 0 0 1
+value=1kVMax
+T 31200 60200 5 10 1 1 0 0 1
+refdes=QC?
+T 31200 60000 5 10 1 1 0 0 1
+device=1kVNMOScascode
+}
+N 30200 59900 30500 59900 4
+N 31000 59700 31000 59600 4
+N 32600 63900 33500 63900 4
+N 33500 63900 33500 60400 4
+N 33500 60400 32600 60400 4
+N 32600 63300 32600 63900 4
+N 32600 60100 32600 59500 4
+N 32600 64200 32600 64800 4
+C 33300 64800 1 270 0 diode-3.sym
+{
+T 33850 64350 5 10 0 0 270 0 1
+device=DIODE
+T 33750 64450 5 10 1 1 270 0 1
+refdes=D?
+}
+N 32600 64200 33000 64200 4
+N 33000 64200 33000 64800 4
+N 33000 64800 36500 64800 4
+C 33300 60400 1 270 0 diode-3.sym
+{
+T 33850 59950 5 10 0 0 270 0 1
+device=DIODE
+T 33750 60050 5 10 1 1 270 0 1
+refdes=D?
+}
+N 32600 60100 33000 60100 4
+N 33000 60100 33000 59500 4
+N 33000 59500 33500 59500 4
+C 41400 63200 1 0 1 isoSwitch-sys.sym
+{
+T 39700 65000 5 10 1 1 0 6 1
+refdes=ISSW?
+T 39700 64700 5 10 1 1 0 6 1
+device=isoSwitch
+}
+C 43700 63000 1 0 1 isoPower-sys.sym
+{
+T 42900 63100 5 10 1 1 0 6 1
+device=isolator
+T 42700 63800 5 10 1 1 0 6 1
+refdes=T?
+}
+C 45100 63700 1 180 0 input-2.sym
+{
+T 44500 63000 5 10 0 0 180 0 1
+device=none
+T 45100 63500 5 10 1 0 180 0 1
+net=TX+:1
+T 44600 63600 5 10 1 1 180 7 1
+value=INPUT
+}
+C 45100 63400 1 180 0 input-2.sym
+{
+T 44500 62700 5 10 0 0 180 0 1
+device=none
+T 45100 63200 5 10 1 0 180 0 1
+net=TX-:1
+T 44600 63300 5 10 1 1 180 7 1
+value=INPUT
+}
+C 41400 59400 1 0 1 lowSwitch-sys.sym
+{
+T 39700 61200 5 10 1 1 0 6 1
+refdes=LOSW?
+T 39700 60900 5 10 1 1 0 6 1
+device=lowSwitch
+}
+C 39500 62700 1 0 1 1kVNMOScascode.sym
+{
+T 38300 63400 5 10 0 1 0 6 1
+value=1kVMax
+T 38300 64000 5 10 1 1 0 6 1
+refdes=QC?
+T 38300 63800 5 10 1 1 0 6 1
+device=1kVNMOScascode
+}
+N 39300 63700 39000 63700 4
+N 38500 63500 38500 63400 4
+C 39500 58900 1 0 1 1kVNMOScascode.sym
+{
+T 38300 59600 5 10 0 1 0 6 1
+value=1kVMax
+T 38300 60200 5 10 1 1 0 6 1
+refdes=QC?
+T 38300 60000 5 10 1 1 0 6 1
+device=1kVNMOScascode
+}
+N 39300 59900 39000 59900 4
+N 38500 59700 38500 59600 4
+N 36900 63900 36000 63900 4
+N 36000 63900 36000 60400 4
+N 36000 60400 36900 60400 4
+N 36900 63300 36900 63900 4
+N 36900 60100 36900 59500 4
+N 36900 64200 36900 64800 4
+C 36200 64800 1 90 1 diode-3.sym
+{
+T 35650 64350 5 10 0 0 270 2 1
+device=DIODE
+T 35750 64450 5 10 1 1 270 2 1
+refdes=D?
+}
+N 36900 64200 36500 64200 4
+N 36500 64200 36500 64800 4
+C 36200 60400 1 90 1 diode-3.sym
+{
+T 35650 59950 5 10 0 0 270 2 1
+device=DIODE
+T 35750 60050 5 10 1 1 270 2 1
+refdes=D?
+}
+N 36900 60100 36500 60100 4
+N 36500 60100 36500 59500 4
+N 36500 59500 36000 59500 4
+C 34200 63000 1 0 0 generic-power.sym
+{
+T 34400 63250 5 10 1 1 0 3 1
+net=Hot:1
+}
+C 34900 63000 1 0 0 generic-power.sym
+{
+T 35100 63250 5 10 1 1 0 3 1
+net=Not:1
+}
+C 33500 62400 1 0 0 inductor-1.sym
+{
+T 33700 62900 5 10 0 0 0 0 1
+device=INDUCTOR
+T 33700 62700 5 10 1 1 0 0 1
+refdes=L?
+T 33700 63100 5 10 0 0 0 0 1
+symversion=0.1
+}
+C 35100 62400 1 0 0 inductor-1.sym
+{
+T 35300 62900 5 10 0 0 0 0 1
+device=INDUCTOR
+T 35300 62700 5 10 1 1 0 0 1
+refdes=L?
+T 35300 63100 5 10 0 0 0 0 1
+symversion=0.1
+}
+N 35100 63000 35100 62500 4
+N 34400 63000 34400 62500 4
+C 28100 60200 1 90 0 vee-1.sym
+N 32600 61000 32600 60400 4
+N 36900 61000 36900 60400 4
+T 35300 56400 9 10 1 0 0 0 12
+Passively rectifies incoming
+AC power into Vcc/Vee DC rails.
+
+When driven, H-Bridge transistors
+may actively rectify power to
+Vcc/Vee DC rails, or invert DC power
+onto AC rails.
+
+Note the diodes MUST be present to
+startup control circuitry IF external
+power is not provided to Vcc/Vee
+DC rails.
+C 34800 58500 1 90 0 resistor-1.sym
+{
+T 34400 58800 5 10 0 0 90 0 1
+device=RESISTOR
+T 34700 58700 5 10 1 1 90 0 1
+refdes=R?
+T 34900 58800 5 10 1 1 90 0 1
+value=0.001
+}
+C 34900 57900 1 180 0 vee-1.sym
+N 33500 59400 36000 59400 4
+N 36000 59500 36000 59400 4
+N 33500 59400 33500 59500 4
+C 29500 57400 1 0 1 opamp-1.sym
+{
+T 28800 58200 5 10 0 0 0 6 1
+device=OPAMP
+T 28800 58000 5 10 1 1 0 6 1
+refdes=U?
+T 28800 58800 5 10 0 0 0 6 1
+symversion=0.1
+}
+C 28800 58200 1 0 0 generic-power.sym
+{
+T 29000 58450 5 10 1 1 0 3 1
+net=Vctrl:1
+}
+N 34700 57900 34700 58500 4
+C 28600 56400 1 0 0 resistor-1.sym
+{
+T 28900 56800 5 10 0 0 0 0 1
+device=RESISTOR
+T 28800 56500 5 10 1 1 0 0 1
+refdes=R?
+T 28600 56400 5 10 1 1 0 0 1
+value=100k
+}
+C 30400 58600 1 90 0 generic-power.sym
+{
+T 30150 58800 5 10 1 1 90 3 1
+net=Vctrl:1
+}
+N 32200 58800 34000 58800 4
+N 34000 58800 34000 59400 4
+C 31300 56800 1 180 0 resistor-1.sym
+{
+T 31000 56400 5 10 0 0 180 0 1
+device=RESISTOR
+T 31100 56700 5 10 1 1 180 0 1
+refdes=R?
+T 31300 56800 5 10 1 1 180 0 1
+value=10k
+}
+C 32200 56800 1 180 0 resistor-1.sym
+{
+T 31900 56400 5 10 0 0 180 0 1
+device=RESISTOR
+T 32000 56700 5 10 1 1 180 0 1
+refdes=R?
+T 32200 56800 5 10 1 1 180 0 1
+value=10k
+}
+C 31300 58900 1 180 0 resistor-1.sym
+{
+T 31000 58500 5 10 0 0 180 0 1
+device=RESISTOR
+T 31100 58800 5 10 1 1 180 0 1
+refdes=R?
+T 31300 58900 5 10 1 1 180 0 1
+value=10k
+}
+C 32200 58900 1 180 0 resistor-1.sym
+{
+T 31900 58500 5 10 0 0 180 0 1
+device=RESISTOR
+T 32000 58800 5 10 1 1 180 0 1
+refdes=R?
+T 32200 58900 5 10 1 1 180 0 1
+value=10k
+}
+C 32400 56700 1 180 0 vee-1.sym
+N 29500 57600 29500 56500 4
+N 28500 57800 28500 56500 4
+N 28500 56500 28600 56500 4
+N 29500 57600 31300 57600 4
+N 31300 57600 31300 56700 4
+N 31300 58800 31300 58000 4
+N 31300 58000 29500 58000 4
+C 29200 57400 1 180 0 vee-1.sym
+C 31500 56700 1 180 0 generic-power.sym
+{
+T 31300 56450 5 10 1 1 180 3 1
+net=Vref:1
+}
+C 30400 56500 1 90 0 generic-power.sym
+{
+T 30150 56700 5 10 1 1 90 3 1
+net=Vctrl:1
+}
+C 28100 60800 1 90 0 generic-power.sym
+{
+T 27850 61000 5 10 1 1 90 3 1
+net=Vctrl:1
+}
+C 41400 61200 1 270 0 generic-power.sym
+{
+T 41650 61000 5 10 1 1 270 3 1
+net=Vctrl:1
+}
+C 41400 60600 1 270 0 vee-1.sym
+C 41400 65000 1 270 0 generic-power.sym
+{
+T 41650 64800 5 10 1 1 270 3 1
+net=Vctrl:1
+}
+C 41400 64400 1 270 0 vee-1.sym
+C 28100 64000 1 90 0 vee-1.sym
+C 28100 64600 1 90 0 generic-power.sym
+{
+T 27850 64800 5 10 1 1 90 3 1
+net=Vctrl:1
+}
+C 19600 58700 1 180 0 vee-1.sym
+C 23900 59700 1 270 0 generic-power.sym
+{
+T 24150 59500 5 10 1 1 270 3 1
+net=Vctrl:1
+}
+C 17300 58700 1 180 0 vee-1.sym
+C 16900 59000 1 0 0 vcc-1.sym
+C 19200 59500 1 0 0 vcc-1.sym
+T 50700 57700 9 10 1 0 0 0 6
+Vee does not consistently match any AC ground.
+
+Common (eg. Earth) grounding is not permitted,
+and may need to be broken by a transformer.
+However, a high-frequency flyback converter
+may be used for this purpose.
+C 50500 63200 1 0 0 isoSwitch-sys.sym
+{
+T 52200 65000 5 10 1 1 0 0 1
+refdes=ISSW?
+T 52200 64700 5 10 1 1 0 0 1
+device=isoSwitch
+}
+C 48200 63000 1 0 0 isoPower-sys.sym
+{
+T 49000 63100 5 10 1 1 0 0 1
+device=isolator
+T 49200 63800 5 10 1 1 0 0 1
+refdes=T?
+}
+C 46800 63700 1 180 1 input-2.sym
+{
+T 47400 63000 5 10 0 0 180 6 1
+device=none
+T 46800 63500 5 10 1 0 180 6 1
+net=TX+:1
+T 47300 63600 5 10 1 1 180 1 1
+value=INPUT
+}
+C 46800 63400 1 180 1 input-2.sym
+{
+T 47400 62700 5 10 0 0 180 6 1
+device=none
+T 46800 63200 5 10 1 0 180 6 1
+net=TX-:1
+T 47300 63300 5 10 1 1 180 1 1
+value=INPUT
+}
+C 50500 59400 1 0 0 lowSwitch-sys.sym
+{
+T 52200 61200 5 10 1 1 0 0 1
+refdes=LOSW?
+T 52200 60900 5 10 1 1 0 0 1
+device=lowSwitch
+}
+C 52400 62700 1 0 0 1kVNMOScascode.sym
+{
+T 53600 63400 5 10 0 1 0 0 1
+value=1kVMax
+T 53600 64000 5 10 1 1 0 0 1
+refdes=QC?
+T 53600 63800 5 10 1 1 0 0 1
+device=1kVNMOScascode
+}
+N 52600 63700 52900 63700 4
+N 53400 63500 53400 63400 4
+C 52400 58900 1 0 0 1kVNMOScascode.sym
+{
+T 53600 59600 5 10 0 1 0 0 1
+value=1kVMax
+T 53600 60200 5 10 1 1 0 0 1
+refdes=QC?
+T 53600 60000 5 10 1 1 0 0 1
+device=1kVNMOScascode
+}
+N 52600 59900 52900 59900 4
+N 53400 59700 53400 59600 4
+N 55000 63900 55900 63900 4
+N 55900 63900 55900 60400 4
+N 55900 60400 55000 60400 4
+N 55000 63300 55000 63900 4
+N 55000 60100 55000 59500 4
+N 55000 64200 55000 64800 4
+C 55700 64800 1 270 0 diode-3.sym
+{
+T 56250 64350 5 10 0 0 270 0 1
+device=DIODE
+T 56150 64450 5 10 1 1 270 0 1
+refdes=D?
+}
+N 55000 64200 55400 64200 4
+N 55400 64200 55400 64800 4
+N 55400 64800 55900 64800 4
+C 55700 60400 1 270 0 diode-3.sym
+{
+T 56250 59950 5 10 0 0 270 0 1
+device=DIODE
+T 56150 60050 5 10 1 1 270 0 1
+refdes=D?
+}
+N 55000 60100 55400 60100 4
+N 55400 60100 55400 59500 4
+N 55400 59500 55900 59500 4
+C 50500 60200 1 90 0 vee-1.sym
+N 55000 61000 55000 60400 4
+N 55900 59400 55900 59500 4
+C 50500 60800 1 90 0 generic-power.sym
+{
+T 50250 61000 5 10 1 1 90 3 1
+net=Vctrl:1
+}
+C 50500 64000 1 90 0 vee-1.sym
+C 50500 64600 1 90 0 generic-power.sym
+{
+T 50250 64800 5 10 1 1 90 3 1
+net=Vctrl:1
+}
+C 56100 59400 1 180 0 vee-1.sym
+C 55900 61900 1 0 0 inductor-1.sym
+{
+T 56100 62400 5 10 0 0 0 0 1
+device=INDUCTOR
+T 56100 62200 5 10 1 1 0 0 1
+refdes=L?
+T 56100 62600 5 10 0 0 0 0 1
+symversion=0.1
+}
+C 57000 61100 1 90 0 capacitor-1.sym
+{
+T 56300 61300 5 10 0 0 90 0 1
+device=CAPACITOR
+T 56800 61300 5 10 1 1 90 0 1
+refdes=C?
+T 56100 61300 5 10 0 0 90 0 1
+symversion=0.1
+}
+C 57000 61100 1 180 0 vee-1.sym
+C 56600 62000 1 0 0 vcc-1.sym
+N 55900 64800 55900 65800 4
+L 24000 66000 24000 66500 3 0 0 0 -1 -1
+L 24000 66500 44500 66500 3 0 0 0 -1 -1
+L 44500 66500 44500 66000 3 0 0 0 -1 -1
+T 34300 66600 9 10 1 0 0 0 1
+Rectifier/Inverter
+T 50500 66400 9 10 1 0 0 0 2
+Bi-Directional Buck PFC Correction
+
+L 46500 66000 46500 66500 3 0 0 0 -1 -1
+L 46500 66500 57000 66500 3 0 0 0 -1 -1
+L 57000 66500 57000 66000 3 0 0 0 -1 -1
+C 56800 64900 1 90 0 capacitor-1.sym
+{
+T 56100 65100 5 10 0 0 90 0 1
+device=CAPACITOR
+T 56600 65100 5 10 1 1 90 0 1
+refdes=C?
+T 55900 65100 5 10 0 0 90 0 1
+symversion=0.1
+}
+C 56800 64900 1 180 0 vee-1.sym
+C 64600 62900 1 0 0 transformer-1.sym
+{
+T 64900 64200 5 10 1 1 0 0 1
+refdes=T?
+T 64900 64200 5 10 0 0 0 0 1
+device=transformer
+}
+C 59200 61500 1 0 0 lowSwitch-sys.sym
+{
+T 60900 63300 5 10 1 1 0 0 1
+refdes=LOSW?
+T 60900 63000 5 10 1 1 0 0 1
+device=lowSwitch
+}
+C 61100 61000 1 0 0 1kVNMOScascode.sym
+{
+T 62300 61700 5 10 0 1 0 0 1
+value=1kVMax
+T 62300 62300 5 10 1 1 0 0 1
+refdes=QC?
+T 62300 62100 5 10 1 1 0 0 1
+device=1kVNMOScascode
+}
+N 61300 62000 61600 62000 4
+N 62100 61800 62100 61700 4
+N 64600 62500 63700 62500 4
+N 63700 62200 63700 61600 4
+C 64400 62500 1 270 0 diode-3.sym
+{
+T 64950 62050 5 10 0 0 270 0 1
+device=DIODE
+T 64650 62150 5 10 1 1 270 0 1
+refdes=D?
+}
+N 63700 62200 64100 62200 4
+N 64100 62200 64100 61600 4
+N 64100 61600 64600 61600 4
+C 59200 62300 1 90 0 vee-1.sym
+N 63700 63100 63700 62500 4
+N 64600 61500 64600 61600 4
+C 59200 62900 1 90 0 generic-power.sym
+{
+T 58950 63100 5 10 1 1 90 3 1
+net=Vctrl:1
+}
+C 64800 61500 1 180 0 vee-1.sym
+C 71500 64900 1 90 0 capacitor-1.sym
+{
+T 70800 65100 5 10 0 0 90 0 1
+device=CAPACITOR
+T 70600 65100 5 10 0 0 90 0 1
+symversion=0.1
+T 71300 65100 5 10 1 1 90 0 1
+refdes=C?
+}
+C 71500 61500 1 0 1 lowSwitch-sys.sym
+{
+T 69800 63300 5 10 1 1 0 6 1
+refdes=LOSW?
+T 69800 63000 5 10 1 1 0 6 1
+device=lowSwitch
+}
+C 69600 61000 1 0 1 1kVNMOScascode.sym
+{
+T 68400 61700 5 10 0 1 0 6 1
+value=1kVMax
+T 68400 62300 5 10 1 1 0 6 1
+refdes=QC?
+T 68400 62100 5 10 1 1 0 6 1
+device=1kVNMOScascode
+}
+N 69400 62000 69100 62000 4
+N 68600 61800 68600 61700 4
+N 66100 62500 67000 62500 4
+N 67000 62200 67000 61600 4
+N 67000 62200 66600 62200 4
+N 66600 62200 66600 61600 4
+N 66600 61600 66100 61600 4
+N 67000 63100 67000 62500 4
+N 64600 62500 64600 63000 4
+N 66100 62500 66100 63000 4
+C 65900 62500 1 270 0 diode-3.sym
+{
+T 66450 62050 5 10 0 0 270 0 1
+device=DIODE
+T 66150 62150 5 10 1 1 270 0 1
+refdes=D?
+}
+C 71500 64900 1 180 0 vee-1.sym
+C 34600 64800 1 0 0 vcc-1.sym
+C 55700 65800 1 0 0 vcc-1.sym
+C 56400 65800 1 0 0 vcc-1.sym
+C 71100 65800 1 0 0 vcc-1.sym
+C 64400 64000 1 0 0 vcc-1.sym
+L 58500 66000 58500 66500 3 0 0 0 -1 -1
+L 58500 66500 72000 66500 3 0 0 0 -1 -1
+L 72000 66500 72000 66000 3 0 0 0 -1 -1
+T 64200 66600 9 10 1 0 0 0 1
+Bi-Directional Flyback Isolator
+T 63500 58700 9 10 1 0 0 0 11
+Optional.
+
+Bi-Directional Flyback Isolator may be actively driven on the side with power,
+or on both sides.
+
+Receiver side may actively switch on while diode is forward biased.
+
+Transmitter logic should attempt to maintain voltage at one side of the
+transformer preferentially. In most applications, this means power would
+be taken from the AC grid to maintain the local DC grid, unless the local
+DC grid is offering substantial excess voltage.
+T 56300 57800 9 10 1 0 0 0 2
+Both the Buck and Flyback Isolator converters can perform PFC,
+therefore only one should be used in a given application.

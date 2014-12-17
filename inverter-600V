@@ -1,0 +1,4 @@
+elements-dir ./gedasymbols/footprints
+elements-dir ./customParts/footprints
+schematics inverter-600V.sch
+output-name inverter-600V
